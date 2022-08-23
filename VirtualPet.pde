@@ -24,11 +24,16 @@ stroke(#000000);
 ellipse(190, 190, 5, 5);
 //left eye
 ellipse(210, 190, 5, 5);
-
-fill(#000000);
-stroke(1);
-strokeWeight(20);
+//nose(https://forum.processing.org/two/discussion/13493/how-can-i-create-a-triangle-with-round-vertexes.html)
+fill(#F5C3C3);
+stroke(#F5C3C3);
+strokeWeight(4);
 strokeJoin(ROUND);
-triangle(200,200,210,170,170,170);
+triangle(198,200,202,200,200,202);
+
+strokeWeight(1);
+noFill();
+stroke(#000000);
+arc(210, 205, 50, 50, HALF_PI, PI);
 }
 
