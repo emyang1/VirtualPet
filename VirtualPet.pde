@@ -3,19 +3,26 @@ void setup(){
   size(400, 400);
 }
 void draw(){
+  //body
+  noStroke();
+  fill(253);
+  ellipse(200, 260, 90, 95);
+  fill(240);
+  ellipse(200, 260, 50, 55);
+
   noStroke();
   //right ear
   fill(#FFFFFF);
   ellipse(215, 170, 20, 85);
   //right ear pink
   fill(#F5C3C3);
-  ellipse(215, 170, 14, 65);
+  ellipse(215, 170, 12, 65);
   //left ear
   fill(#FFFFFF);
   ellipse(185, 170, 20, 85);
   //left ear pink
   fill(#F5C3C3);
-  ellipse(185, 170, 14, 65);
+  ellipse(185, 170, 12, 65);
   //head
   fill(#FFFFFF);
   ellipse(200, 200, 78, 65);
@@ -41,16 +48,5 @@ void draw(){
   curve(210, 210, 205, 215, 195, 215, 210, 210);
   strokeWeight(1.5);
   quad(197, 215, 203, 215, 203, 220, 197, 220);  //teeth
-
-
-  noFill();
-  beginShape();
-  curveVertex(250,  250);
-  curveVertex(256,  264);
-  curveVertex(262,  176);
-  curveVertex(184, 168);
-  curveVertex(128, 400);
-  curveVertex(128, 400);
-  endShape();
 }
 
